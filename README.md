@@ -58,25 +58,12 @@ Install dependencies:
 pip install -r requirements.txt
 
 ▶️ Usage
-
 Train the model
-
 python src/train.py
-
-
-Make predictions on audio files
-
-python src/predict.py --file samples/test.wav
-
-
-Run the Web App (Flask included)
-
-python run app.py
-
-🔮 Future Improvements
+##🔮 Future Improvements
 Improve accuracy with larger datasets
 
-📜 License
+##📜 License
 This project is licensed under the MIT License.
 
 👨‍💻 Author
