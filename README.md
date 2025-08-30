@@ -22,17 +22,17 @@ The model can detect emotions such as **happy, sad, angry, neutral, fear, surpri
 ---
 
 ## 📂 Project Structure
-speech-emotion-recognition/
-│-- data/ # Dataset (not included in repo)
-│-- models/ # Saved model files (.h5)
-│-- notebooks/ # Jupyter notebooks for experiments
-│-- src/ # Source code
-│ ├── preprocess.py # Audio preprocessing
-│ ├── train.py # Model training
-│ ├── predict.py # Prediction script
-│ └── app.py # Streamlit / Flask app
-│-- requirements.txt # Dependencies
-│-- README.md # Project documentation
+      speech-emotion-recognition/
+      │-- data/ # Dataset (not included in repo)
+      │-- models/ # Saved model files (.h5)
+      │-- notebooks/ # Jupyter notebooks for experiments
+      │-- src/ # Source code
+      │ ├── preprocess.py # Audio preprocessing
+      │ ├── train.py # Model training
+      │ ├── predict.py # Prediction script
+      │ └── app.py # Streamlit / Flask app
+      │-- requirements.txt # Dependencies
+      │-- README.md # Project documentation
 
 
 ---
