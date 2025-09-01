@@ -55,10 +55,11 @@ venv\Scripts\activate      # (Windows)
 ## Output
 <img width="1059" height="510" alt="Image" src="https://github.com/user-attachments/assets/bfb7a60d-b231-4893-a678-cd800007959c" />
 
-▶️ Usage
+## ▶️ Usage
 Train the model
 python src/train.py
-##🔮 Future Improvements
+
+## 🔮 Future Improvements
 Improve accuracy with larger datasets
 
 ##📜 License
