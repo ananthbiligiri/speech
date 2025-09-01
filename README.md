@@ -65,6 +65,6 @@ Improve accuracy with larger datasets
 📜 License
 This project is licensed under the MIT License.
 
-## 👨‍💻 Author
- | Ananth B S |
+##   👨‍💻 Author
+| Ananth B S |
 
