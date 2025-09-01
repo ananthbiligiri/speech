@@ -52,10 +52,8 @@ python -m venv venv
 source venv/bin/activate   # (Linux/Mac)
 venv\Scripts\activate      # (Windows)
 
-
-Install dependencies:
-
-pip install -r requirements.txt
+## Output
+<img width="1059" height="510" alt="Image" src="https://github.com/user-attachments/assets/bfb7a60d-b231-4893-a678-cd800007959c" />
 
 ▶️ Usage
 Train the model
