@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speech Emotion Recognition</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .upload-form { margin: 20px 0; }
+        .result { margin-top: 20px; padding: 15px; background: #f5f5f5; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Speech Emotion Recognition</h1>
+    <p>Upload an audio file (.wav) to analyze its emotional content</p>
+    
+    <form class="upload-form" id="uploadForm">
+        <input type="file" name="file" accept=".wav" required>
+        <button type="submit">Analyze Emotion</button>
+    </form>
+    
+    <div class="result" id="result" style="display: none;">
+        <h2>Result:</h2>
+        <p><strong>Emotion:</strong> <span id="emotion"></span></p>
+        <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+    </div>
+    
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData();
+            formData.append('file', e.target.file.files[0]);
+            
+            const response = await fetch('/predict', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.json();
+            
+            if (result.error) {
+                alert('Error: ' + result.error);
+            } else {
+                document.getElementById('emotion').textContent = result.emotion;
+                document.getElementById('confidence').textContent = (result.confidence * 100).toFixed(2) + '%';
+                document.getElementById('result').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
