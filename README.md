@@ -62,10 +62,9 @@ python src/train.py
 ## 🔮 Future Improvements
 Improve accuracy with larger datasets
 
-##📜 License
+📜 License
 This project is licensed under the MIT License.
 
-👨‍💻 Author
-Your Name – GitHub
+## 👨‍💻 Author
  | Ananth B S |
 
